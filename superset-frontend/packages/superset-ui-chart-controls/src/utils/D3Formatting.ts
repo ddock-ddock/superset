@@ -52,6 +52,10 @@ const d3Formatted: [string, string][] = [
 
 // input choices & options
 export const D3_FORMAT_OPTIONS: [string, string][] = [
+  ['KR_Adaptive', t('한국 적응형 (123억, 1234만)')],
+  ['KRW_Adaptive', t('한국원(￦) 적응형 (123억원, 1234만원)')],
+  ['KR_억.2f', t('억단위 (123.45억)')],
+  ['KR_만.2f', t('만단위 (123.45만)')],
   [NumberFormats.SMART_NUMBER, t('Adaptive formatting')],
   ['~g', t('Original value')],
   ...d3Formatted,

@@ -21,6 +21,7 @@ import {
   getNumberFormatter,
   getNumberFormatterRegistry,
   NumberFormats,
+  NumberFormatter,
   getTimeFormatterRegistry,
   SMART_DATE_ID,
   SMART_DATE_DETAILED_ID,
@@ -39,6 +40,50 @@ export default function setupFormatters(
 ) {
   getNumberFormatterRegistry()
     .setD3Format(d3NumberFormat)
+    .registerValue('KR_Adaptive', new NumberFormatter({
+      id: 'KR_Adaptive',
+      formatFunc: (value) => {
+        const units = ['', '만', '억', '조', '경'];
+        let unitIndex = 0;
+        let scaledValue = value;
+        
+        while (scaledValue >= 10000 && unitIndex < units.length - 1) {
+          scaledValue /= 10000;
+          unitIndex++;
+        }
+        
+        return scaledValue.toFixed(scaledValue < 100 ? 1 : 0) + units[unitIndex];
+      }
+    }))
+    .registerValue('KRW_Adaptive', new NumberFormatter({
+      id: 'KRW_Adaptive',
+      formatFunc: (value) => {
+        const units = ['원', '만원', '억원', '조원', '경원'];
+        let unitIndex = 0;
+        let scaledValue = value;
+        
+        while (scaledValue >= 10000 && unitIndex < units.length - 1) {
+          scaledValue /= 10000;
+          unitIndex++;
+        }
+        
+        return scaledValue.toFixed(scaledValue < 100 ? 1 : 0) + units[unitIndex];
+      }
+    }))
+    .registerValue('KR_억.2f', new NumberFormatter({
+      id: 'KR_억.2f',
+      formatFunc: (value) => {
+        const scaledValue = value / 100000000;
+        return scaledValue.toFixed(2) + '억';
+      }
+    }))
+    .registerValue('KR_만.2f', new NumberFormatter({
+      id: 'KR_만.2f',
+      formatFunc: (value) => {
+        const scaledValue = value / 10000;
+        return scaledValue.toFixed(2) + '만';
+      }
+    }))
     // Add shims for format strings that are deprecated or common typos.
     // Temporary solution until performing a db migration to fix this.
     .registerValue(',0', getNumberFormatter(',.4~f'))
