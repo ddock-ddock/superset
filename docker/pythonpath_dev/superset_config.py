@@ -98,6 +98,10 @@ class CeleryConfig:
 
 CELERY_CONFIG = CeleryConfig
 
+# Uncomment to setup Your App name & Specify the App icon.
+APP_NAME = "VCworks BI"
+APP_ICON = "/static/assets/images/vcworks-logo.svg"
+
 BABEL_DEFAULT_LOCALE = "ko"  #기본 언어를 한국어로
 LANGUAGES = { # 지원하는 언어 목록 설정
     "ko": {"flag": "kr", "name": "Korean"},

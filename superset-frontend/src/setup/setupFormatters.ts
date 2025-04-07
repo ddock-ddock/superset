@@ -35,7 +35,7 @@ import { FormatLocaleDefinition } from 'd3-format';
 import { TimeLocaleDefinition } from 'd3-time-format';
 
 const units_korean = ['', '만', '억', '조', '경'];
-const units_korean_won = ['', '만', '억', '조', '경'];
+const units_korean_won = ['원', '만원', '억원', '조원', '경원'];
 
 export default function setupFormatters(
   d3NumberFormat: Partial<FormatLocaleDefinition>,
