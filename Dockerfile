@@ -32,7 +32,7 @@ ARG BUILD_TRANSLATIONS="true"
 FROM --platform=${BUILDPLATFORM} node:20-bookworm-slim AS superset-node-ci
 ARG BUILD_TRANSLATIONS
 ENV BUILD_TRANSLATIONS=${BUILD_TRANSLATIONS}
-ARG DEV_MODE="true"           # Skip frontend build in dev mode
+ARG DEV_MODE="false"           # Skip frontend build in dev mode
 ENV DEV_MODE=${DEV_MODE}
 
 COPY docker/ /app/docker/
