@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-16 16:14+0900\n"
-"PO-Revision-Date: 2025-04-16 17:32+0900\n"
+"PO-Revision-Date: 2025-04-16 17:59+0900\n"
 "Last-Translator: \n"
 "Language-Team: ko <LL@li.org>\n"
 "Language: ko\n"
@@ -3636,7 +3636,7 @@ msgid "Datasource type is required when datasource_id is given"
 msgstr "datasource_id가 지정된 경우 데이터소스 유형은 필수입니다"
 
 msgid "Date Time Format"
-msgstr "날짜/시간 포맷"
+msgstr "날짜/시간 형식"
 
 msgid "Date format"
 msgstr "날짜 형식"
@@ -3653,7 +3653,7 @@ msgid ""
 msgstr "해당 유형의 차트에 필요한 datetime 컬럼이 테이블 구성에 포함되지 않았습니다"
 
 msgid "Datetime format"
-msgstr "Datetime 포맷"
+msgstr "Datetime 형식"
 
 msgid "Day"
 msgstr "일"
@@ -5205,7 +5205,7 @@ msgid "Form data not found in cache, reverting to dataset metadata."
 msgstr "캐시에서 양식 데이터를 찾을 수 없어 데이터셋 메타데이터로 되돌립니다."
 
 msgid "Format SQL"
-msgstr "SQL 포맷"
+msgstr "SQL 포맷팅"
 
 msgid ""
 "Format data labels. Use variables: {name}, {value}, {percent}. \\n represents a "
@@ -6982,7 +6982,7 @@ msgid "None -> None"
 msgstr "없음 -> 없음"
 
 msgid "Normal"
-msgstr "Normal"
+msgstr "보통"
 
 msgid "Normalize"
 msgstr "정규화"
@@ -7057,7 +7057,7 @@ msgid "Null or Empty"
 msgstr "Null 또는 비어 있음"
 
 msgid "Number Format"
-msgstr "숫자 포맷"
+msgstr "숫자 형식"
 
 msgid ""
 "Number bounds used for color encoding from red to blue.\n"
@@ -7070,10 +7070,10 @@ msgstr ""
 "됩니다."
 
 msgid "Number format"
-msgstr "숫자 포맷"
+msgstr "숫자 형식"
 
 msgid "Number format string"
-msgstr "숫자 포맷 문자열"
+msgstr "숫자 형식 문자열"
 
 msgid "Number formatting"
 msgstr "숫자 서식"
@@ -7848,7 +7848,7 @@ msgid "Primary y-axis Bounds"
 msgstr "주요 Y축 범위"
 
 msgid "Primary y-axis format"
-msgstr "주요 Y축 포맷"
+msgstr "주요 Y축 형식"
 
 msgid "Private Channels (Bot in channel)"
 msgstr "비공개 채널(채널 내 봇)"
@@ -8340,7 +8340,7 @@ msgid "Right"
 msgstr "오른쪽"
 
 msgid "Right Axis Format"
-msgstr "오른쪽 축 포맷"
+msgstr "오른쪽 축 형식"
 
 msgid "Right Axis Metric"
 msgstr "오른쪽 축 메트릭"
@@ -8805,13 +8805,13 @@ msgid "Secondary Metric"
 msgstr "보조 메트릭"
 
 msgid "Secondary currency format"
-msgstr "보조 통화 포맷"
+msgstr "보조 통화 형식"
 
 msgid "Secondary y-axis Bounds"
 msgstr "보조 Y축 범위"
 
 msgid "Secondary y-axis format"
-msgstr "보조 Y축 포맷"
+msgstr "보조 Y축 형식"
 
 msgid "Secondary y-axis title"
 msgstr "보조 Y축 제목"
@@ -9510,7 +9510,7 @@ msgid "Small"
 msgstr "작게"
 
 msgid "Small number format"
-msgstr "소수 포맷"
+msgstr "소수 형식"
 
 msgid "Smooth Line"
 msgstr "매끄러운 선"
