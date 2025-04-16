@@ -109,10 +109,23 @@ LANGUAGES = { # 지원하는 언어 목록 설정
     #다른 언어 추가 가능
 }
 
-FEATURE_FLAGS = {"ALERT_REPORTS": True,
-                 "EMBEDDED_SUPERSET": True,
-                 }
-                 
+FEATURE_FLAGS = { "EMBEDDED_SUPERSET": True }
+
+ENABLE_CORS = True
+CORS_OPTIONS = {
+    "supports_credentials": True,
+    "allow_headers": ["*"],
+    "resources": {
+        r"/*": {
+            "origins": ["*"],
+            "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        }
+    }
+}
+
+TALISMAN_ENABLED = False
+WTF_CSRF_ENABLED = False
+
 ALERT_REPORTS_NOTIFICATION_DRY_RUN = True
 WEBDRIVER_BASEURL = "http://superset:8088/"  # When using docker compose baseurl should be http://superset_app:8088/  # noqa: E501
 # The base URL for the email report hyperlinks.
