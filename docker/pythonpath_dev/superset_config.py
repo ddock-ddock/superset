@@ -126,6 +126,8 @@ CORS_OPTIONS = {
 TALISMAN_ENABLED = False
 WTF_CSRF_ENABLED = False
 
+FAVICONS = [{"href": "/static/assets/images/vcworks-favicon.png"}]
+
 ALERT_REPORTS_NOTIFICATION_DRY_RUN = True
 WEBDRIVER_BASEURL = "http://superset:8088/"  # When using docker compose baseurl should be http://superset_app:8088/  # noqa: E501
 # The base URL for the email report hyperlinks.
