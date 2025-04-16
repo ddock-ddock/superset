@@ -107,6 +107,8 @@ LANGUAGES = { # 지원하는 언어 목록 설정
 
 FEATURE_FLAGS = { "EMBEDDED_SUPERSET": True }
 
+FAVICONS = [{"href": "/static/assets/images/vcworks-favicon.png"}]
+
 ALERT_REPORTS_NOTIFICATION_DRY_RUN = True
 WEBDRIVER_BASEURL = "http://superset:8088/"  # When using docker compose baseurl should be http://superset_app:8088/  # noqa: E501
 # The base URL for the email report hyperlinks.
