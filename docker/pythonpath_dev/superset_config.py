@@ -98,6 +98,10 @@ class CeleryConfig:
 
 CELERY_CONFIG = CeleryConfig
 
+# Uncomment to setup Your App name & Specify the App icon.
+APP_NAME = "VCworks BI"
+APP_ICON = "/static/assets/images/vcworks-logo.svg"
+
 BABEL_DEFAULT_LOCALE = "ko"  #기본 언어를 한국어로
 LANGUAGES = { # 지원하는 언어 목록 설정
     "ko": {"flag": "kr", "name": "Korean"},
@@ -106,6 +110,21 @@ LANGUAGES = { # 지원하는 언어 목록 설정
 }
 
 FEATURE_FLAGS = { "EMBEDDED_SUPERSET": True }
+
+ENABLE_CORS = True
+CORS_OPTIONS = {
+    "supports_credentials": True,
+    "allow_headers": ["*"],
+    "resources": {
+        r"/*": {
+            "origins": ["*"],
+            "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        }
+    }
+}
+
+TALISMAN_ENABLED = False
+WTF_CSRF_ENABLED = False
 
 ALERT_REPORTS_NOTIFICATION_DRY_RUN = True
 WEBDRIVER_BASEURL = "http://superset:8088/"  # When using docker compose baseurl should be http://superset_app:8088/  # noqa: E501

@@ -34,6 +34,9 @@ import {
 import { FormatLocaleDefinition } from 'd3-format';
 import { TimeLocaleDefinition } from 'd3-time-format';
 
+const units_korean = ['', '만', '억', '조', '경'];
+const units_korean_won = ['원', '만원', '억원', '조원', '경원'];
+
 export default function setupFormatters(
   d3NumberFormat: Partial<FormatLocaleDefinition>,
   d3TimeFormat: Partial<TimeLocaleDefinition>,
@@ -43,42 +46,83 @@ export default function setupFormatters(
     .registerValue('KR_Adaptive', new NumberFormatter({
       id: 'KR_Adaptive',
       formatFunc: (value) => {
-        const units = ['', '만', '억', '조', '경'];
         let unitIndex = 0;
         let scaledValue = value;
         
-        while (scaledValue >= 10000 && unitIndex < units.length - 1) {
+        while (scaledValue >= 10000 && unitIndex < units_korean.length - 1) {
           scaledValue /= 10000;
           unitIndex++;
         }
         
-        return scaledValue.toFixed(scaledValue < 100 ? 1 : 0) + units[unitIndex];
+        return scaledValue.toFixed(0) + units_korean[unitIndex];
+      }
+    }))
+    .registerValue('KR_Adaptive_.1f', new NumberFormatter({
+      id: 'KR_Adaptive_.1f',
+      formatFunc: (value) => {
+        let unitIndex = 0;
+        let scaledValue = value;
+        
+        while (scaledValue >= 10000 && unitIndex < units_korean.length - 1) {
+          scaledValue /= 10000;
+          unitIndex++;
+        }
+        // 100억 이상인 경우, 123억만 표기됨
+        // 100억 미만인 경우, 50.0억으로 표기됨
+        return scaledValue.toFixed(scaledValue < 100 ? 1 : 0) + units_korean[unitIndex];
       }
     }))
     .registerValue('KRW_Adaptive', new NumberFormatter({
       id: 'KRW_Adaptive',
       formatFunc: (value) => {
-        const units = ['원', '만원', '억원', '조원', '경원'];
         let unitIndex = 0;
         let scaledValue = value;
         
-        while (scaledValue >= 10000 && unitIndex < units.length - 1) {
+        while (scaledValue >= 10000 && unitIndex < units_korean_won.length - 1) {
           scaledValue /= 10000;
           unitIndex++;
         }
         
-        return scaledValue.toFixed(scaledValue < 100 ? 1 : 0) + units[unitIndex];
+        return scaledValue.toFixed(0) + units_korean_won[unitIndex];
       }
     }))
-    .registerValue('KR_억.2f', new NumberFormatter({
-      id: 'KR_억.2f',
+    .registerValue('KRW_Adaptive_.1f', new NumberFormatter({
+      id: 'KRW_Adaptive_.1f',
+      formatFunc: (value) => {
+        let unitIndex = 0;
+        let scaledValue = value;
+        
+        while (scaledValue >= 10000 && unitIndex < units_korean_won.length - 1) {
+          scaledValue /= 10000;
+          unitIndex++;
+        }
+        
+        return scaledValue.toFixed(scaledValue < 100 ? 1 : 0) + units_korean_won[unitIndex];
+      }
+    }))
+    .registerValue('KR억', new NumberFormatter({
+      id: 'KR억',
+      formatFunc: (value) => {
+        const scaledValue = value / 100000000;
+        return scaledValue.toFixed(0) + '억';
+      }
+    }))
+    .registerValue('KR억.2f', new NumberFormatter({
+      id: 'KR억.2f',
       formatFunc: (value) => {
         const scaledValue = value / 100000000;
         return scaledValue.toFixed(2) + '억';
       }
     }))
-    .registerValue('KR_만.2f', new NumberFormatter({
-      id: 'KR_만.2f',
+    .registerValue('KR만', new NumberFormatter({
+      id: 'KR만',
+      formatFunc: (value) => {
+        const scaledValue = value / 10000;
+        return scaledValue.toFixed(0) + '만';
+      }
+    }))
+    .registerValue('KR만.2f', new NumberFormatter({
+      id: 'KR만.2f',
       formatFunc: (value) => {
         const scaledValue = value / 10000;
         return scaledValue.toFixed(2) + '만';

@@ -118,6 +118,9 @@ superset/translations/**/messages.mo
 
 docker/requirements-local.txt
 
+# docker .env file
+docker/.env
+
 cache/
 docker/*local*
 
