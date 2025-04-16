@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2024-07-30 17:32-0600\n"
-"PO-Revision-Date: 2025-04-16 14:25+0900\n"
+"PO-Revision-Date: 2025-04-16 15:07+0900\n"
 "Last-Translator: \n"
 "Language-Team: ko <LL@li.org>\n"
 "Language: ko\n"
@@ -273,11 +273,11 @@ msgstr "%s 선택됨"
 
 #, python-format
 msgid "%s Selected (%s Physical, %s Virtual)"
-msgstr "%s 선택됨 (%s 물리적, %s 가상)"
+msgstr "%s 선택됨 (%s 물리, %s 가상)"
 
 #, python-format
 msgid "%s Selected (Physical)"
-msgstr "%s 선택됨 (물리적)"
+msgstr "%s 선택됨 (물리)"
 
 #, python-format
 msgid "%s Selected (Virtual)"
@@ -4069,7 +4069,7 @@ msgid "Download to CSV"
 msgstr "CSV로 다운로드"
 
 msgid "Draft"
-msgstr "드래프트(Draft)"
+msgstr "초안(Draft)"
 
 msgid "Drag and drop components and charts to the dashboard"
 msgstr "컴포넌트와 차트를 대시보드로 드래그 앤 드롭하세요"
@@ -7061,7 +7061,7 @@ msgid "On Grace"
 msgstr "On Grace (유예 기간)"
 
 msgid "On dashboards"
-msgstr "대시보드에서"
+msgstr "사용된 대시보드"
 
 msgid ""
 "One or many columns to group by. High cardinality groupings should include a series limit to "
@@ -7450,13 +7450,13 @@ msgid "Person or group that has certified this metric"
 msgstr "이 메트릭을 인증한 개인 또는 그룹입니다"
 
 msgid "Physical"
-msgstr "물리적"
+msgstr "물리"
 
 msgid "Physical (table or view)"
-msgstr "물리적 (테이블 또는 뷰)"
+msgstr "물리 (테이블 또는 뷰)"
 
 msgid "Physical dataset"
-msgstr "물리적 데이터셋"
+msgstr "물리 데이터셋"
 
 msgid "Pick a dimension from which categorical colors are defined"
 msgstr "범주형 색상이 정의되는 차원을 선택합니다"
@@ -8253,7 +8253,7 @@ msgid "Rich Tooltip"
 msgstr "리치 툴팁"
 
 msgid "Rich tooltip"
-msgstr "Rich Tooltip"
+msgstr "리치 툴팁"
 
 msgid "Right"
 msgstr "오른쪽"
@@ -9334,6 +9334,9 @@ msgstr "요약 보기"
 
 msgid "Show the value on top of the bar"
 msgstr "막대 상단에 값 표시"
+
+msgid "Show total"
+msgstr "합계 표시"
 
 msgid ""
 "Show total aggregations of selected metrics. Note that row limit does not apply to the "
@@ -10507,8 +10510,8 @@ msgid ""
 "The pointer to a physical table (or view). Keep in mind that the chart is associated to this "
 "Superset logical table, and this logical table points the physical table referenced here."
 msgstr ""
-"물리적 테이블(또는 뷰)을 가리키는 포인터입니다. 차트는 이 Superset 논리적 테이블에 연결되어 "
-"있으며, 이 논리적 테이블은 여기에 참조된 물리적 테이블을 가리킨다는 점에 유의하세요."
+"물리 테이블(또는 뷰)을 가리키는 포인터입니다. 차트는 이 Superset 논리적 테이블에 연결되어 있"
+"으며, 이 논리적 테이블은 여기에 참조된 물리 테이블을 가리킨다는 점에 유의하세요."
 
 msgid "The port is closed."
 msgstr "포트가 닫힙니다."
@@ -11030,7 +11033,7 @@ msgid "This dashboard is now published"
 msgstr "이 대시보드가 게시되었습니다"
 
 msgid "This dashboard is published. Click to make it a draft."
-msgstr "이 대시보드가 게시되었습니다. 클릭하여 드래프트 상태로 만듭니다."
+msgstr "이 대시보드가 게시되었습니다. 클릭하여 초안(Draft) 상태로 만듭니다."
 
 msgid ""
 "This dashboard is ready to embed. In your application, pass the following id to the SDK:"
@@ -11969,7 +11972,7 @@ msgid "Version number"
 msgstr "버전 번호"
 
 msgid "Vertical"
-msgstr "수직"
+msgstr "세로"
 
 msgid "Vertical (Left)"
 msgstr "세로(왼쪽)"
@@ -13036,7 +13039,7 @@ msgid "by using"
 msgstr "다음을 사용하여"
 
 msgid "cannot be empty"
-msgstr "cannot be empty"
+msgstr "비워둘 수 없습니다"
 
 msgid "cardinal"
 msgstr "기수(cardinal)"
@@ -13196,7 +13199,7 @@ msgid "dialect+driver://username:password@host:port/database"
 msgstr "dialect+driver://username:password@host:port/database"
 
 msgid "draft"
-msgstr "드래프트(Draft)"
+msgstr "초안(Draft)"
 
 msgid "dttm"
 msgstr "dttm"
