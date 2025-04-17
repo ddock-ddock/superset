@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-16 16:14+0900\n"
-"PO-Revision-Date: 2025-04-16 18:19+0900\n"
+"PO-Revision-Date: 2025-04-17 09:45+0900\n"
 "Last-Translator: \n"
 "Language-Team: ko <LL@li.org>\n"
 "Language: ko\n"
@@ -449,7 +449,7 @@ msgid "1 year start frequency"
 msgstr "1년 시작 주기"
 
 msgid "10 minute"
-msgstr "10 분"
+msgstr "10분"
 
 msgid "10/90 percentiles"
 msgstr "10/90 백분위수"
@@ -584,7 +584,7 @@ msgid "9/91 percentiles"
 msgstr "9/91 백분위수"
 
 msgid "90 days"
-msgstr "90 일"
+msgstr "90일"
 
 msgid ":"
 msgstr ":"
@@ -11066,7 +11066,7 @@ msgid "There was an issue previewing the selected query. %s"
 msgstr "선택한 쿼리를 미리보기 중 문제가 발생했습니다. %s"
 
 msgid "These are the datasets this filter will be applied to."
-msgstr "이 필터가 적용될 데이터셋는 다음과 같습니다."
+msgstr "이 필터가 적용될 데이터셋은 다음과 같습니다."
 
 msgid ""
 "This JSON object is generated dynamically when clicking the save or overwrite "
@@ -11213,10 +11213,10 @@ msgstr ""
 "주세요."
 
 msgid "This dataset is managed externally, and can't be edited in Superset"
-msgstr "이 데이터셋는 외부에서 관리되며 VCworks BI에서 편집할 수 없습니다"
+msgstr "이 데이터셋은 외부에서 관리되며 VCworks BI에서 편집할 수 없습니다"
 
 msgid "This dataset is not used to power any charts."
-msgstr "이 데이터셋는 어떤 차트에도 사용되지 않습니다."
+msgstr "이 데이터셋은 어떤 차트에도 사용되지 않습니다."
 
 msgid "This defines the element to be plotted on the chart"
 msgstr "차트에 그려질 요소를 정의합니다"
@@ -13742,7 +13742,7 @@ msgid "stopped"
 msgstr "중지됨"
 
 msgid "stream"
-msgstr "stream"
+msgstr "스트림 (stream)"
 
 msgid "string type icon"
 msgstr "문자열 유형 아이콘"
