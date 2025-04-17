@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2025-04-16 16:14+0900\n"
-"PO-Revision-Date: 2025-04-17 09:51+0900\n"
+"PO-Revision-Date: 2025-04-17 10:15+0900\n"
 "Last-Translator: \n"
 "Language-Team: ko <LL@li.org>\n"
 "Language: ko\n"
@@ -2150,7 +2150,7 @@ msgid "Calculated columns"
 msgstr "계산된 컬럼"
 
 msgid "Calculation type"
-msgstr "계산 타입"
+msgstr "계산 유형"
 
 msgid "Calendar Heatmap"
 msgstr "달력 히트맵"
@@ -8331,10 +8331,10 @@ msgid "Reverse lat/long "
 msgstr "위도/경도 반전 "
 
 msgid "Rich Tooltip"
-msgstr "리치 툴팁"
+msgstr "풍부한 툴팁"
 
 msgid "Rich tooltip"
-msgstr "리치 툴팁"
+msgstr "풍부한 툴팁"
 
 msgid "Right"
 msgstr "오른쪽"
@@ -8966,7 +8966,7 @@ msgid ""
 msgstr "표에 표시할 컬럼을 선택합니다. 컬럼을 여러 개 선택할 수 있습니다."
 
 msgid "Select content type"
-msgstr "내용 타입 선택"
+msgstr "내용 유형 선택"
 
 msgid "Select current page"
 msgstr "현재 페이지 선택"
@@ -10721,7 +10721,7 @@ msgstr ""
 "백엔드에 저장된 결과가 다른 형식으로 저장되어 더 이상 역직렬화할 수 없습니다."
 
 msgid "The rich tooltip shows a list of all series for that point in time"
-msgstr "리치 툴팁은 해당 시점의 모든 시리즈 목록을 보여줍니다"
+msgstr "풍부한 툴팁은 해당 시점의 모든 시리즈 목록을 보여줍니다"
 
 msgid ""
 "The row limit set for the chart was reached. The chart may show partial data."
@@ -11546,7 +11546,7 @@ msgid "To get a readable URL for your dashboard"
 msgstr "대시보드의 가독성 있는 URL을 얻으려면 다음과 같이 하세요"
 
 msgid "Tooltip"
-msgstr "도구 설명"
+msgstr "툴팁"
 
 msgid "Tooltip Contents"
 msgstr "툴팁 내용"
@@ -11671,7 +11671,7 @@ msgid "Tukey"
 msgstr "Tukey"
 
 msgid "Type"
-msgstr "타입"
+msgstr "유형"
 
 #, python-format
 msgid "Type \"%s\" to confirm"
